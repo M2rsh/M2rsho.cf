@@ -17,7 +17,7 @@ export const Routes = () => {
                         <NovaArmy />
                     </Route>
 
-                    <Route exact path={["/home", "/"]}>
+                    <Route exact path={["/home", "/", ""]}>
                         <App/>
                     </Route>
 
