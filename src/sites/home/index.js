@@ -1,7 +1,6 @@
 import './index.css';
 import { Twemoji } from 'react-emoji-render';
 
-
 function App() {
   document.title = "Cumming Soon... - M2rsho.cf"
   return (
