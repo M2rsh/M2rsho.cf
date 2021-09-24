@@ -1,18 +1,29 @@
 import './index.css';
-import {Helmet} from "react-helmet";
+import {DocumentMeta} from "react-document-meta";
 //import { Twemoji } from 'react-emoji-render';
 
+const meta = {
+    title: 'Samvikshana - New Perspective of Exploration',
+    meta: {
+      property: {
+        'og:title': 'Nova Simp Army',
+        'og:url': 'https://m2rsho.cf/nova-army',
+        'og:image': "https://m2rsho.cf/assets/UncleSam.jpg",
+        'og:description': 'I Want You For Nova Simp Army!',
+
+        'twitter:card': 'summary_large_image',
+        'twitter:title': 'Nova Simp Army',
+        'twitter:description': 'I Want You For Nova Simp Army!',
+        'twitter:image': "https://m2rsho.cf/assets/UncleSam.jpg"
+      }
+    }
+  };
 
 const NovaArmy = () => {
   document.title = "Nova Army - M2rsho.cf"
   return (
     <>
-    <Helmet>
-        <meta name="theme-color" content="#D6D7D2" />
-        <meta name="description" content="We Want You For Nova Simp Army!"/>
-        <meta property="og:image"  content="%PUBLIC_URL%/UncleSam.jpg" />
-        <meta property="twitter:image"  content="%PUBLIC_URL%/UncleSam.jpg" />
-    </Helmet>
+    <DocumentMeta {...meta} />
 
     <div className="App">
       <header className="App-header">
