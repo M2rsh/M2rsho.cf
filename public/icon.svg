@@ -1,14 +1,14 @@
 <svg width="1080" height="1080" xmlns="http://www.w3.org/2000/svg">
  <g>
-  <ellipse fill="#1b212b" stroke="#000" cx="540.00011" cy="540.00296" id="svg_1" rx="540" ry="540" stroke-width="0"/>
-  <ellipse transform="rotate(90 541 542.289)" filter="url(#svg_8_blur)" stroke="#3d4ddb" fill="none" stroke-width="5" cx="541" cy="542.28858" id="svg_5" rx="157.85758" ry="534.14409"/>
-  <ellipse transform="rotate(45 540 542.289)" filter="url(#svg_8_blur)" stroke="#3d4ddb" fill="none" stroke-width="5" cx="540" cy="542.28858" id="svg_9" rx="157.85758" ry="534.14409"/>
-  <ellipse transform="rotate(-45 540 542.289)" filter="url(#svg_8_blur)" stroke="#3d4ddb" fill="none" stroke-width="5" cx="540" cy="542.28858" id="svg_10" rx="157.85758" ry="534.14409"/>
-  <ellipse filter="url(#svg_8_blur)" stroke="#3d4ddb" fill="none" stroke-width="5" cx="540" cy="542.28858" id="svg_8" rx="157.85758" ry="534.14409"/>
-  <ellipse stroke="#000" fill="#de813e" cx="545.28569" cy="361.71494" id="svg_3" rx="79.00027" ry="125.71463" stroke-width="0"/>
-  <ellipse fill="#ddba5a" cx="544" cy="411.00079" id="svg_4" rx="50.71444" ry="75.00021" stroke="#000" stroke-width="0"/>
-  <ellipse fill="#fff0b2" cx="544" cy="442.42944" id="svg_6" rx="27.85723" ry="43.57155" stroke="#000" stroke-width="0"/>
-  <rect stroke="#000" rx="27" fill="#e2e1f2" stroke-width="0" x="476.85696" y="505.71715" width="134.28608" height="447.28667" id="svg_7"/>
+    <ellipse filter="url(#svg_8_blur)" stroke="#000000" fill="none" stroke-width="25" cx="540" cy="542.28858" id="svg_5" rx="157.85758" ry="534.14409" transform="rotate(90 541 542.289)"/>
+    <ellipse filter="url(#svg_8_blur)" stroke="#000000" fill="none" stroke-width="25" cx="540" cy="542.28858" id="svg_9" rx="157.85758" ry="534.14409" transform="rotate(45 540 542.289)"/>
+    <ellipse filter="url(#svg_8_blur)" stroke="#000000" fill="none" stroke-width="25" cx="540" cy="542.28858" id="svg_10" rx="157.85758" ry="534.14409" transform="rotate(-45 540 542.289)"/>
+    <ellipse filter="url(#svg_8_blur)" stroke="#000000" fill="none" stroke-width="25" cx="540" cy="542.28858" id="svg_8" rx="157.85758" ry="534.14409"/>
+
+    <ellipse filter="url(#svg_8_blur)" stroke="#de813e" fill="none" stroke-width="15" cx="540" cy="542.28858" id="svg_5" rx="157.85758" ry="534.14409" transform="rotate(90 541 542.289)"/>
+    <ellipse filter="url(#svg_8_blur)" stroke="#de813e" fill="none" stroke-width="15" cx="540" cy="542.28858" id="svg_9" rx="157.85758" ry="534.14409" transform="rotate(45 540 542.289)"/>
+    <ellipse filter="url(#svg_8_blur)" stroke="#de813e" fill="none" stroke-width="15" cx="540" cy="542.28858" id="svg_10" rx="157.85758" ry="534.14409" transform="rotate(-45 540 542.289)"/>
+    <ellipse filter="url(#svg_8_blur)" stroke="#de813e" fill="none" stroke-width="15" cx="540" cy="542.28858" id="svg_8" rx="157.85758" ry="534.14409"/>
  </g>
  <defs>
   <filter id="svg_8_blur">
