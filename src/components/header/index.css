@@ -1,0 +1,25 @@
+@import url('../palette.css');
+
+.Header {
+    background-color: var(--color1);
+    color: var(--color6);
+    min-height: 50px;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+.Header .main-text {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    position: relative;
+    font-size: 40px;
+    top: 25px;
+}
+.headerdiv {
+    position: relative;
+    top: -5.1vh;
+    margin-top: 0;
+}

@@ -11,7 +11,7 @@ function NotFound() {
     <div className="App">
         <MdError size={64} className="error-icon"/>
         <pre>Error 404<br/>This Page Doesn't Exist</pre>
-        <div onClick={TakeBack} className="take-back-button">
+        <div onClick={TakeBack} className="button">
           Take Me Back
         </div>
     </div>

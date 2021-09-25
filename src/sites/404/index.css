@@ -10,21 +10,6 @@
   color: white;
 }
 
-.take-back-button{
-  margin: 15px;
-  background-color: white;
-  color: #282c34;
-  border-radius: 5px;
-  cursor: pointer;
-  padding: 15px;
-  transition: background .5s;
-  
-}
-
-.take-back-button:hover{
-  background-color: lightslategray;
-}
-
 .error-icon{
   animation: error-animation 2s infinite;
   color: #e66363;
