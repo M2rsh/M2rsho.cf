@@ -1,7 +1,5 @@
 .App {
   text-align: center;
-  background-color: #282c34;
-  min-height: 100vh;
   display: block;
   align-items: center;
   justify-content: center;
@@ -10,8 +8,8 @@
 }
 
 .App-logo {
-  height: 256px !important;
-  width: 256px !important;
+  height: calc(6px + 30vmin) !important;
+  width: calc(6px + 30vmin) !important;
   pointer-events: none;
 }
 @media (prefers-reduced-motion: no-preference) {
