@@ -10,12 +10,17 @@
     margin-top: 0px;
     padding-top: 0px;
     top: 0;
+    display: flex;
+    justify-content: center;
+    align-content: stretch;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 .Header .main-text {
+    display: block;
     align-items: center;
     justify-content: center;
     text-align: center;
-    display: flex;
     position: relative;
     font-size: calc(10px + 4vmin);
     margin: 0;
@@ -25,3 +30,61 @@
     position: relative;
     margin-top: 0;
 }
+
+.menu-content{
+    text-align: left;
+    margin-top: 50px;
+    background-size: contain;
+    line-height: 35px;
+}
+.menu-content-links{
+  margin-left: 15px;
+}
+.menu-content a{
+    background-color: var(--color2);
+    border-radius: 5px;
+    color: var(--color6);
+    padding: 5px;
+    transition-duration: 250ms;
+    transition-delay: 100ms;
+    text-decoration: none;
+    margin: 5px;
+    font-size: calc(10px + 2vmin);
+}
+.menu-content a:hover{
+  color: var(--color7);
+  background-color: var(--color1);
+  transition-duration: 250ms;
+  transition-delay: 10ms;
+}
+.menu-content a.selected{
+    color: var(--color7);
+}
+.cheeseburger-menu-outer{
+  border-right:5px solid var(--color1);
+}
+.cheeseburger-menu-inner{
+  background-color: var(--color1);
+}
+.cheeseburgir{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 25px;
+    float: right;
+}
+
+.exit-button {
+    margin: 05px;
+    background-color: white;
+    color: #282c34;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px;
+    transition: background .5s;
+    line-height: 20px;
+    position: absolute;
+    top: 15px;
+    left: 82%;
+}
+.exit-button:hover { background-color: lightslategray; }

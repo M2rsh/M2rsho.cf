@@ -1,18 +1,25 @@
 @import url('components/palette.css');
+#root {
+  height: 100vh;
+  width: 100vw;
+}
 
+html {
+  overflow-x: hidden;
+}
 body {
   background-color: var(--color2);
   font-family: 'Exo', sans-serif;
-  overflow-x: hidden;
+  min-height: 100%;
 }
-html, body
-{
+
+html, body {
     position: absolute;
     top: 0;
     margin: 0;
     padding: 0;
+    min-height: 100%;
 }
-
 body::-webkit-scrollbar { width: 1em; }
 body::-webkit-scrollbar-track { box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); }
 body::-webkit-scrollbar-thumb { background-color: #373b46; border-radius: 15px; transition: background 2s; }
