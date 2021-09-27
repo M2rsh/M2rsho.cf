@@ -6,7 +6,7 @@
 }
 footer {
     position: relative;
-    top: 40vh;
+    margin-top: 20vh;
 }
 .Footer-Text {
     display: flex;
