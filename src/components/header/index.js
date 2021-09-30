@@ -28,7 +28,7 @@ class Header extends react.Component {
         return (
         <div className="headerdiv">
             <header className="Header">
-                <p className="main-text"><Twemoji svg text="👋 Welcome!"/></p>
+                <p className="main-text">{this.props.text}</p>
                 <div className="cheeseburgir">
                     <HamburgerMenu
                         isOpen={this.state.menuOpen}
