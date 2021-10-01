@@ -10,10 +10,6 @@
     <meta name="description" content="Coming Soon..."/>
     <title>Website - M2rsho.cf</title>
     <style>
-      .svgLoader {
-        animation: spin 0.5s linear infinite;
-        margin: auto;
-      }
       .divLoader {
         width: 100vw;
         height: 100vh;
@@ -21,10 +17,54 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        transform-origin: 50% 50%;
+        -webkit-transform-origin: 50% 50%;
+        -ms-transform-origin: 50% 50%;
       }
-      @keyframes spin {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
+      svg circle{
+        stroke: #80b0b6;
+      }
+
+      .circle{
+        transform-origin: center ;
+      }
+      #arc1{
+        stroke-dasharray: 30;
+        stroke-dashoffset: 18;
+        animation: 10s -2s rota infinite linear;
+      }
+      #arc3{
+        stroke-dasharray: 400;
+        stroke-dashoffset: 400;
+        animation: 16s 1s rota infinite linear;
+      }
+      #arc4{
+        stroke-dasharray: 400;
+        stroke-dashoffset: 400;
+        animation: 6s 1s rota infinite linear reverse;
+      }
+      #arc5{
+        stroke-dasharray: 400;
+        stroke-dashoffset: 400;
+        animation: 4s 1s rota infinite linear;
+      }
+      #arc6{
+        stroke-dasharray: 400;
+        stroke-dashoffset: 400;
+        animation: 8s 1s rota infinite linear alternate;
+      }
+      #arc7{
+        stroke-dasharray: 400;
+        stroke-dashoffset: 400;
+        animation: 4s 1s rota infinite linear reverse;
+      }
+      @keyframes rota{
+        from{
+          transform: rotate(0deg);
+        }
+        to{
+          transform: rotate(360deg);
+        }
       }
       #style {
         background-color: #373b46;
@@ -32,29 +72,24 @@
     </style>
   </head>
 
-  <body>
+  <body style="background-color: #373b46; overflow-x: hidden;">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root">
 
       <div class="divLoader">
-        <svg width="38" height="38" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg" stroke="#fff">
-            <g fill="none" fill-rule="evenodd">
-                <g transform="translate(1 1)" stroke-width="2">
-                    <circle stroke-opacity=".5" cx="18" cy="18" r="18"/>
-                    <path d="M36 18c0-9.94-8.06-18-18-18">
-                        <animateTransform
-                            attributeName="transform"
-                            type="rotate"
-                            from="0 18 18"
-                            to="360 18 18"
-                            dur="1s"
-                            repeatCount="indefinite"/>
-                    </path>
-                </g>
-            </g>
+        <svg xmlns="http://www.w3.org/2000/svg" width="10em" viewBox="0 0 300 300">
+          <circle id="arc1" class="circle" cx="150" cy="150" r="120" opacity=".89" fill="none" stroke="#632b26" stroke-width="12" stroke-linecap="square" stroke-opacity=".99213" paint-order="fill markers stroke"/>
+          <circle id="arc2" class="circle" cx="150" cy="150" r="120" opacity=".49" fill="none" stroke="#632b26" stroke-width="8" stroke-linecap="square" stroke-opacity=".99213" paint-order="fill markers stroke"/>
+          <circle id="arc3" class="circle" cx="150" cy="150" r="100" opacity=".49" fill="none" stroke="#632b26" stroke-width="20" stroke-linecap="square" stroke-opacity=".99213" paint-order="fill markers stroke"/>
+          <circle id="arc4" class="circle" cx="150" cy="150" r="120" opacity=".49" fill="none" stroke="#632b26" stroke-width="30" stroke-linecap="square" stroke-opacity=".99213" paint-order="fill markers stroke"/>
+          <circle id="arc5" class="circle" cx="150" cy="150" r="100" opacity=".89" fill="none" stroke="#632b26" stroke-width="8" stroke-linecap="square" stroke-opacity=".99213" paint-order="fill markers stroke"/>
+          <circle id="arc6" class="circle" cx="150" cy="150" r="90" opacity=".49" fill="none" stroke="#632b26" stroke-width="16" stroke-linecap="square" stroke-opacity=".99213" paint-order="fill markers stroke"/>
+          <circle id="arc7" class="circle" cx="150" cy="150" r="90" opacity=".89" fill="none" stroke="#632b26" stroke-width="8" stroke-linecap="square" stroke-opacity=".99213" paint-order="fill markers stroke"/>
+          <circle id="arc8" class="circle" cx="150" cy="150" r="80" opacity=".79" fill="#4DD0E1" fill-opacity="0"troke="#632b26" stroke-width="8" stroke-linecap="square" stroke-opacity=".99213" paint-order="fill markers stroke"/>
         </svg>
+               
         <br/>
-        <p style="color: white;">Loading Please Wait...</p>
+        <p style="color: white; font-size: 150%; padding: 5px; text-align: center;">Loading Please Wait...</p>
       </div>
 
     </div>

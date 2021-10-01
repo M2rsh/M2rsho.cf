@@ -1,12 +1,13 @@
 @import url('../palette.css');
-.footer {
+footer {
     background-color: var(--color1);
     min-height: 75px;
     padding-bottom: 25px;
 }
-footer {
+.footer {
     position: relative;
     margin-top: 20vh;
+    min-width: 100vw;
 }
 .Footer-Text {
     display: flex;

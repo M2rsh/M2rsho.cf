@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Redirect, BrowserRouter, Switch } from 'react-router-dom';
-import App from '../sites/home/index'
+import Home from '../sites/home/index'
+import AboutMe from '../sites/about-me/index'
 import NotFound from '../sites/404/index'
 import NovaArmy from '../sites/nova-army/index'
 import Header from '../components/header/index'
@@ -24,7 +25,8 @@ function createRoute(path, component, headerAndFooter=true, headerText="Not Spec
 createRoute( "/404"                                                         , <NotFound />    , false)
 createRoute( "/balls"                                                       , <Demo />        , true, "Demo")
 createRoute(["/nova-army", "/nova-simp-army", "/novaarmy", "/novasimparmy"] , <NovaArmy />    , true, <Twemoji svg text="✨ Nova Army"/>)
-createRoute(["/home", "/", ""]                                              , <App />         , true, <Twemoji svg text="👋 Welcome!"/>)
+createRoute(["/home", "/", ""]                                              , <Home />        , true, <Twemoji svg text="👋 Welcome!"/>)
+createRoute(["/about-me", "/aboutme", "about"]                              , <AboutMe />     , true, <Twemoji svg text="🕵️‍♂️ About Me"/>)
 
 export const Routes = () => {
   return (

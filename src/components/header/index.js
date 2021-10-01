@@ -55,6 +55,12 @@ class Header extends react.Component {
                                         </NavLink>
                                         <br/>
                                     </li>
+                                    <li key="About Me">
+                                        <NavLink to="/about-me" onClick={this.closeMenu.bind(this)} activeClassName="selected">
+                                             <Twemoji svg text="🕵️‍♂️ About Me" />
+                                        </NavLink>
+                                        <br/>
+                                    </li>
                                     <li key="Nova Army">
                                         <NavLink to="/nova-army" onClick={this.closeMenu.bind(this)} activeClassName="selected">
                                              <Twemoji svg text="✨ Nova Army" />

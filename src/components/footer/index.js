@@ -7,9 +7,9 @@ class Footer extends react.Component {
 
     render() {
         return (
-            <footer>
+            <div className="footer">
                 <Animation />
-                <div className="footer">
+                <footer>
                     <span className="Footer-Text">
                         <Twemoji svg text="✌"/>
                     </span>
@@ -19,8 +19,8 @@ class Footer extends react.Component {
                         <a href="https://github.com/m2rsho"> <SiGithub /> </a>
                         <a href="https://youtube.com/c/mariyt10"> <SiYoutube /> </a>
                     </div>
-                </div>
-            </footer>
+                </footer>
+            </div>
         )
     }
   }

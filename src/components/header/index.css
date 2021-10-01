@@ -39,6 +39,7 @@
 }
 .menu-content-links{
   margin-left: 15px;
+  line-height: 50px;
 }
 .menu-content a{
     background-color: var(--color2);

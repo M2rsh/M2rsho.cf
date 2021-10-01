@@ -8,7 +8,7 @@ function Animation() {
         config: { duration: 5000 },
     });
     return (
-        <svg style={{width: "100vw", margin: "0px", padding: "0px", position: "relative", top: "5px"}} id="footer-svg" viewBox="0 0 960 100"  xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <svg style={{width: "100vw", margin: "0px", padding: "0px", position: "relative", top: "6px"}} id="footer-svg" viewBox="0 0 960 100"  xmlns="http://www.w3.org/2000/svg" version="1.1">
             <animated.path
                 d={path1.d}
                 fill="#1b212b"

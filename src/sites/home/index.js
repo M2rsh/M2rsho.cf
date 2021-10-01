@@ -1,15 +1,15 @@
 import './index.css';
 import { Twemoji } from 'react-emoji-render';
 
-function App() {
-  document.title = "Coming Soon... - M2rsho.cf"
+function Home() {
+  document.title = "Home - M2rsho.cf"
   return (
-    <div className="App">
-        <Twemoji svg text="☠️" options={{ className: "App-logo"}}/>
+    <div className="Home">
+        <Twemoji svg text="☠️" options={{ className: "Home-logo"}}/>
         <br/> <br/>
-        <pre>Coming Soon...</pre>
+        <pre>I dunno what to do here</pre>
     </div>
   );
 }
 
-export default App;
+export default Home;
