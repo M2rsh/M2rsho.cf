@@ -20,7 +20,7 @@ html, body {
     overflow: visible;
     overflow-x: hidden;
 }
-body::-webkit-scrollbar { width: 1em; }
+body::-webkit-scrollbar { width: .5em; }
 body::-webkit-scrollbar-track { background-color: rgba(0, 0, 0, 0); }
 body::-webkit-scrollbar-thumb { background-color: #3e4b6d; border-radius: 15px; transition: background 2s; }
 body::-webkit-scrollbar-thumb:hover { background-color: #33363f; }

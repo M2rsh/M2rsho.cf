@@ -6,8 +6,15 @@ function Home() {
   return (
     <div className="Home">
         <Twemoji svg text="☠️" options={{ className: "Home-logo"}}/>
-        <br/> <br/>
-        <pre>I dunno what to do here</pre>
+
+        <iframe src="https://discord.com/widget?id=885976189049651200&theme=dark"
+                width="350"
+                height="500" 
+                allowtransparency="true" 
+                frameborder="0" 
+                title="discord"
+                sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+        ></iframe>
     </div>
   );
 }
