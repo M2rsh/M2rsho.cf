@@ -5,7 +5,7 @@ class Main extends React.Component {
   render() {
     return (
       <div className="App">
-        <h1>Coming Soon...</h1>
+        <h1>Cuming Soon...<span style={{fontSize: "0px"}}>Daddy</span></h1>
       </div>
     );
   }
