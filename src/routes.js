@@ -3,8 +3,8 @@ import {
     Routes,
     Route,
 } from "react-router-dom";
-import Main from './Pages/main/index'
-import NotFound from './Pages/404/index'
+import Main from './pages/main/index'
+import NotFound from './pages/404/index'
 import './index.css'
 
 function WebRoutes() {

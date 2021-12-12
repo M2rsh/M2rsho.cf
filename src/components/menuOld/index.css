@@ -1,0 +1,103 @@
+.alert-enter {
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+.alert-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 300ms, transform 300ms;
+}
+
+.alert-exit {
+    opacity: 1;
+}
+
+.alert-exit-active {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 300ms, transform 300ms;
+}
+
+.slide-enter {
+    transform: translateX(-100%);
+    transition: .3s linear;
+}
+.slide-enter-active {
+    transform: translateX(0%);
+}
+.slide-exit {
+    transform: translateX(0%);
+    transition: .3s linear;
+}
+.slide-exit-active {
+    transform: translateX(-100%);
+}
+
+.fade-enter {
+    opacity: 0;
+}
+
+.fade-enter-active {
+    opacity: 1;
+    transition: opacity 300ms, transform 300ms;
+}
+
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-exit-active {
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+}
+
+.slideButton-enter {
+    transform: translateX(0);
+    transition: .3s linear;
+}
+.slideButton-enter-active {
+    transform: translateX(20%);
+}
+.slideButton-exit {
+    transform: translateX(20%);
+    transition: .3s linear;
+}
+.slideButton-exit-active {
+    transform: translateX(0);
+}
+
+.menu {
+    background-color: #8E9779;
+    height: 100vh;
+    width: 20vw;
+    position: fixed;
+    top:0;
+    left:0;
+    border-right: #55695A 2px solid;
+    z-index: 999;
+}
+
+#overlay {
+    background-color: #00000069;
+    position: fixed;
+    width: 150vw;
+    height: 100vh;
+    z-index: 998;
+}
+
+.header {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.hr {
+    border: 0;
+    height: 1px;
+    background-color: #55695A;
+}
+
+.menuButtonDiv {
+    position: fixed;
+}
