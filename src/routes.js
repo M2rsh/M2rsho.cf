@@ -1,33 +1,57 @@
-import {
-    BrowserRouter,
-    Routes,
-    Route,
-} from "react-router-dom";
-import Main from './pages/main/index'
-import NotFound from './pages/404/index'
-import './index.css'
-import Menu from './components/menu/index'
+import { Routes, Route, useLocation } from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion";
+
+import Menu from "./components/menu/index";
+import Footer from "./components/footer/index";
+
+import Main from "./pages/main/index";
+import About from "./pages/about/index";
+import NotFound from "./pages/404/index";
+
+import "./index.css";
 
 function getElement(element) {
-  return(
+  return (
     <>
-    <Menu />
-    <div className="container">
-    {element}
-    </div>
+      <Menu />
+      <motion.div
+        initial={{
+          transform: "translateX(100%)",
+          opacity: 0,
+        }}
+        animate={{ 
+          transform: "translateX(0%)",
+          opacity: 1 ,
+          transition: { 
+            delay: 1,
+            duration: 2
+          }
+        }}
+        exit={{ 
+          transform: "translateX(-100%)",
+          opacity: 0 
+        }}
+        transition={{ delay: 0.2, duration: 2 }}
+      >
+        <div className="container">{element}</div>
+      </motion.div>
+      <Footer />
     </>
-  )
+  );
 }
 
-function WebRoutes() {
-    return (
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={getElement(<Main />)} />
-          <Route path='*' element={getElement(<NotFound />)} />
-        </Routes>
-      </BrowserRouter>
-    );
-}
+const WebRoutes = () => {
+  const location = useLocation();
 
-export default WebRoutes
+  return (
+    <AnimatePresence>
+      <Routes location={location} key={location.pathname}>
+        <Route path="/" element={getElement(<Main />)} />
+        <Route path="*" element={getElement(<About />)} />
+        <Route path="*" element={getElement(<NotFound />)} />
+      </Routes>
+    </AnimatePresence>
+  );
+};
+
+export default WebRoutes;

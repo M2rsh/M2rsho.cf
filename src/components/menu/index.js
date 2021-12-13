@@ -3,6 +3,8 @@ import React from "react";
 import icon from "../../assets/favicon.svg";
 import { CSSTransition } from "react-transition-group";
 import HamburgerMenu from "react-hamburger-menu";
+import { Link } from "react-router-dom";
+
 function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window;
   return {
@@ -37,6 +39,12 @@ class Menu extends React.Component {
   nothing() {
     // This function does absolutely nothing.. Maybe except taking too much bytes.. like 119 bytes..
   }
+  closeMenu() {
+    if (this.state.onMobile){
+      this.setState({ showMenu: false })
+    }
+  }
+  
   render() {
     const getTimeout = () => {
       if (!this.state.onMobile) {
@@ -58,9 +66,10 @@ class Menu extends React.Component {
                 padding: "0px",
                 borderRadius: "500px",
                 position: "fixed",
-                top: '88%',
-                left: '100vw',
-                marginLeft: '-56vw',
+                top: "88%",
+                left: "100vw",
+                marginLeft: "-56vw",
+                zIndex: "999"
               }}
               onClick={() =>
                 this.setState((prevState) => ({
@@ -68,7 +77,7 @@ class Menu extends React.Component {
                 }))
               }
             >
-              <span style={{position: 'relative', left: '12.5px'}}>
+              <span style={{ position: "relative", left: "12.5px" }}>
                 <HamburgerMenu
                   isOpen={this.state.showMenu}
                   menuClicked={this.nothing}
@@ -132,15 +141,14 @@ class Menu extends React.Component {
                 &nbsp;M2rsh
               </p>
             </span>
-            <div style={{ textAlign: "center" }}>
-              <button
-                className="button"
-                onClick={() => {
-                  window.location = "/";
-                }}
-              >
-                Home
-              </button>
+            <div style={{ textAlign: "center", lineHeight: "2.5" }}>
+              <Link to="/" onClick={() => this.closeMenu()}>
+                <button className="button">Home</button>
+              </Link>
+              <br/>
+              <Link to="/about" onClick={() => this.closeMenu()}>
+                <button className="button">About Me</button>
+              </Link>
             </div>
           </div>
         </CSSTransition>

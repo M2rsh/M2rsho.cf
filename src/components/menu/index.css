@@ -3,7 +3,7 @@
     min-width: 150px;
     background-color: #647562;
     height: 100vh;
-    z-index: 999;
+    z-index: 998;
 }
 
 .slide-enter {
@@ -44,5 +44,5 @@
     position: fixed;
     width: 150vw;
     height: 100vh;
-    z-index: 998;
+    z-index: 997;
 }
