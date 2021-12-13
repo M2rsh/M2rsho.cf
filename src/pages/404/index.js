@@ -8,21 +8,29 @@ class NotFound extends React.Component {
   render() {
     return (
       <div className="Container404">
-        <div className="filter" style={{
-          borderRadius: '15px',
-          padding: '25px',
-          textAlign: 'center'
-        }}>
-        <h1>Error <span style={{fontWeight: "400"}}>404</span></h1>
-        <button className="button"
-          style={{
-            minWidth: "12vw",
-            minHeight: "4vh",
-          }}
-          onClick={this.redirect}
-        >
-          Go Back
-        </button>
+        <div style={{top: "-100px", position: "relative"}}>
+          <div
+            className="filter"
+            style={{
+              borderRadius: "15px",
+              padding: "25px",
+              textAlign: "center",
+            }}
+          >
+            <h1>
+              Error <span style={{ fontWeight: "400" }}>404</span>
+            </h1>
+            <button
+              className="button"
+              style={{
+                minWidth: "12vw",
+                minHeight: "4vh",
+              }}
+              onClick={this.redirect}
+            >
+              Go Back
+            </button>
+          </div>
         </div>
       </div>
     );

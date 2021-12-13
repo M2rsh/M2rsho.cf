@@ -2,7 +2,7 @@ import "./index.css";
 import React from "react";
 import icon from "../../assets/favicon.svg";
 import { CSSTransition } from "react-transition-group";
-
+import HamburgerMenu from "react-hamburger-menu";
 function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window;
   return {
@@ -34,15 +34,17 @@ class Menu extends React.Component {
   componentWillUnmount() {
     window.removeEventListener("resize", this.handleResize.bind(this));
   }
-
+  nothing() {
+    // This function does absolutely nothing.. Maybe except taking too much bytes.. like 119 bytes..
+  }
   render() {
     const getTimeout = () => {
-      if (!this.state.onMobile){
-          return 0;
+      if (!this.state.onMobile) {
+        return 0;
       } else {
-          return 300
+        return 300;
       }
-    }
+    };
     const renderMenuButton = () => {
       if (this.state.onMobile) {
         return (
@@ -50,11 +52,15 @@ class Menu extends React.Component {
             <button
               className="button"
               style={{
-                minWidth: "4vw",
-                minHeight: "4vh",
-                float: "right",
+                width: "50px",
+                height: "50px",
                 margin: "25px",
-                position: 'fixed'
+                padding: "0px",
+                borderRadius: "500px",
+                position: "fixed",
+                top: '88%',
+                left: '100vw',
+                marginLeft: '-56vw',
               }}
               onClick={() =>
                 this.setState((prevState) => ({
@@ -62,7 +68,19 @@ class Menu extends React.Component {
                 }))
               }
             >
-              Menu
+              <span style={{position: 'relative', left: '12.5px'}}>
+                <HamburgerMenu
+                  isOpen={this.state.showMenu}
+                  menuClicked={this.nothing}
+                  width={25}
+                  height={20}
+                  strokeWidth={1}
+                  rotate={0}
+                  color="#F5F5F5"
+                  borderRadius={50}
+                  animationDuration={0.5}
+                />
+              </span>
             </button>
             <CSSTransition
               in={this.state.showMenu}
