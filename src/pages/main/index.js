@@ -8,7 +8,7 @@ class Main extends React.Component {
       <>
       <Menu/>
       <div className="App">
-        <h1>Cuming Soon...<span style={{fontSize: "0px"}}>Daddy</span></h1>
+        <h1>Coming Soon...<span style={{fontSize: "0px"}}>Daddy</span></h1>
       </div>
       </>
     );
