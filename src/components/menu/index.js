@@ -69,7 +69,8 @@ class Menu extends React.Component {
                 top: "88%",
                 left: "100vw",
                 marginLeft: "-56vw",
-                zIndex: "999"
+                zIndex: "999",
+                opacity: "0.7"
               }}
               onClick={() =>
                 this.setState((prevState) => ({

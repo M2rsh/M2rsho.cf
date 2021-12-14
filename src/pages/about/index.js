@@ -5,7 +5,7 @@ class About extends React.Component {
   render() {
     return (
       <>
-        <div className="filter" style={{borderRadius: "25px", padding: "25px", width: "50%"}}>
+        <div className="filter" style={{borderRadius: "15px", padding: "25px", minWidth: "50%", maxWidth: "80%"}}>
           <p>
             Somebody once told me the world is gonna roll me <br />
             I ain't the sharpest tool in the shed <br />
