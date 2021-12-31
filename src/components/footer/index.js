@@ -19,7 +19,7 @@ class Footer extends React.Component {
             &nbsp;
             <span style={{ fontSize: "2em", color: "#bccca5" }}>M2rsh</span>
             <br/>
-            <span style={{ fontSize: ".75em"}}>Copyright © 2021-2021</span>
+            <span style={{ fontSize: ".75em"}}>Copyright © 2021-2022</span>
             </p>
           </div>
           <div style={{float: "right", display: "flex", fontSize: "3em", position: "relative", top: "-2em", marginLeft: "150px"}}>
