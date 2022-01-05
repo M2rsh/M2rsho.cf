@@ -1,0 +1,47 @@
+@import ../../theme2
+
+.menu
+    position: fixed
+    min-width: 150px
+    background-color: $color1c
+    height: 100vh
+    z-index: 998
+
+.slide-enter
+    transform: translateX(-100%)
+    transition: .3s linear
+
+
+    &-active
+        transform: translateX(0%)
+
+.slide-exit
+    transform: translateX(0%)
+    transition: .3s linear
+
+
+    &-active
+        transform: translateX(-100%)
+
+.fade-enter
+    opacity: 0
+
+
+    &-active
+        opacity: 1
+        transition: opacity 300ms, transform 300ms
+
+.fade-exit
+    opacity: 1
+
+
+    &-active
+        opacity: 0
+        transition: opacity 300ms, transform 300ms
+
+#overlay
+    background-color: #00000069
+    position: fixed
+    width: 150vw
+    height: 100vh
+    z-index: 997

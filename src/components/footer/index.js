@@ -1,5 +1,5 @@
 import React from "react";
-import "./index.css";
+import "./index.sass";
 import icon from "../../assets/favicon.svg";
 import { RiGithubLine, RiYoutubeLine, RiDiscordLine } from 'react-icons/ri';
 
@@ -9,7 +9,7 @@ class Footer extends React.Component {
     return (
       <>
         <footer>
-          <div style={{ margin: "30px", color: "#bccca5" }}>
+          <div style={{ margin: "30px", color: "#353131" }}>
             <p>
             <img
               src={icon}
@@ -17,7 +17,7 @@ class Footer extends React.Component {
               style={{ top: "1em", position: "relative", height: "3em" }}
             />
             &nbsp;
-            <span style={{ fontSize: "2em", color: "#bccca5" }}>M2rsh</span>
+            <span style={{ fontSize: "2em" }} className="text">M2rsh</span>
             <br/>
             <span style={{ fontSize: ".75em"}}>Copyright © 2021-2022</span>
             </p>

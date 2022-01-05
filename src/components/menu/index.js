@@ -1,4 +1,4 @@
-import "./index.css";
+import "./index.sass";
 import React from "react";
 import icon from "../../assets/favicon.svg";
 import { CSSTransition } from "react-transition-group";
@@ -129,7 +129,7 @@ class Menu extends React.Component {
                   textAlign: "center",
                   fontWeight: "normal",
                   fontSize: "24px",
-                  color: "#bccca5",
+                  color: "#CDC9C3",
                 }}
               >
                 <img

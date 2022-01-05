@@ -8,7 +8,7 @@ import Main from "./pages/main/index";
 import About from "./pages/about/index";
 import NotFound from "./pages/404/index";
 
-import "./index.css";
+import "./index.sass";
 
 function getElement(element) {
   return (
@@ -47,7 +47,7 @@ const WebRoutes = () => {
     <AnimatePresence>
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={getElement(<Main />)} />
-        <Route path="*" element={getElement(<About />)} />
+        <Route path="/about" element={getElement(<About />)} />
         <Route path="*" element={getElement(<NotFound />)} />
       </Routes>
     </AnimatePresence>

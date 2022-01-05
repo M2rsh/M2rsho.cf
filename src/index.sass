@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+@import ./theme2
+
+
+html, body
+  font-family: 'Nunito'
+  font-weight: 200
+  margin: 0
+  background-color: $color1 !important
+  /* background-image: linear-gradient(43deg, #72806A 0%, #8E9779 46%, #9FAE81 100%);*/
+
+  background-image: url('./assets/background.svg')
+  color: $color2
+  /*-webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: $color4
+  overflow-x: hidden
+
+*
+  font-family: 'Nunito'
+  font-weight: 200
+  /*text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);*/
+
+code
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace
+
+#root
+  min-height: 100vh
+
+.filter
+  -webkit-backdrop-filter: blur(4px)
+  backdrop-filter: blur(4px)
+  background-color: $color1ca
+  color: $color2
+  display: inline-block
+
+
+  &:before
+    box-shadow: inset 0 0 2000px $color1ca
+    filter: blur(4px)
+
+.button
+  display: inline-block
+  outline: 0
+  border: none
+  cursor: pointer
+  font-weight: 600
+  border-radius: 15px
+  font-size: 13px
+  height: 30px
+  background-color: $color1b
+  color: $color2
+  padding: 0 20px
+  transition: background-color .3s
+
+
+  &:hover
+    background-color: $color1
+    color: $color4
+
+  &:active
+    background-color: $color1c
+    color: $color4
+
+::-webkit-scrollbar
+  width: 10px
+
+::-webkit-scrollbar-track
+  background: rgba(0, 0, 0, 0)
+  display: none
+
+::-webkit-scrollbar-thumb
+  background: $color1a
+  border-radius: 25px
+
+::-webkit-scrollbar-thumb:hover
+  background: $color1b
+
+.container
+  position: relative
+  margin-top: 0px
+  padding-top: 25px
+  margin-bottom: 25px
+  padding-left: 150px
+ 
+
+@media screen and (max-width: 600px)
+.container
+  margin-left: 25px
+
+p
+  font-weight: 400

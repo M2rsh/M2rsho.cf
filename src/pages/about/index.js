@@ -1,11 +1,17 @@
 import React from "react";
-import "./index.css";
+import "./index.sass";
 
 class About extends React.Component {
   render() {
     return (
       <>
-        <div className="filter" style={{borderRadius: "15px", padding: "25px", minWidth: "50%", maxWidth: "80%"}}>
+        <div
+          className="filter"
+          style={{
+            borderRadius: "15px",
+            padding: "25px"
+          }}
+        >
           <p>
             Somebody once told me the world is gonna roll me <br />
             I ain't the sharpest tool in the shed <br />
