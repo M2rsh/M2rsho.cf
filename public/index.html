@@ -1,38 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!--
+<!--
 
 
                                 I love Tea <3
 
 
   -->
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#353131" />
-    <meta property="og:title" content="M2rsh" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://m2rsho.cf" />
-    <meta property="og:image" content="%PUBLIC_URL%/favicon.png" />
-    <meta property="og:description" content='Somebody once told me the world is gonna roll me
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#353131" />
+  <meta property="og:title" content="M2rsh" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://m2rsho.cf" />
+  <meta property="og:image" content="%PUBLIC_URL%/favicon.svg" />
+  <meta property="og:description" content='Somebody once told me the world is gonna roll me
 I ain&apos;t the sharpest tool in the shed
 She was looking kind of dumb with her finger and her thumb
 In the shape of an "L" on her forehead' />
 
-    <meta
-      name="M2rsh"
-      content='Somebody once told me the world is gonna roll me
+  <meta name="M2rsh" content='Somebody once told me the world is gonna roll me
 I ain&apos;t the sharpest tool in the shed
 She was looking kind of dumb with her finger and her thumb
-In the shape of an "L" on her forehead'
-    />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <title>M2rsho</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-  </body>
+In the shape of an "L" on her forehead' />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <title>M2rsho</title>
+  <style>
+    body {
+      background-color: #555555;
+    }
+
+    .loading {
+      color: #CDC9C3;
+      text-align: center;
+      font-family: Tahoma, ;
+
+    }
+
+    .loadingDiv {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      padding-top: 35vh;
+      flex-direction: column;
+    }
+
+    .svg-loader {
+      display: flex;
+      position: relative;
+      align-content: space-around;
+      justify-content: center;
+    }
+
+    .loader-svg {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      fill: none;
+      stroke-width: 5px;
+      stroke-linecap: round;
+      stroke: #E0C097;
+    }
+
+    .animate {
+      stroke-dasharray: 242.6;
+      animation: fill-animation 1s cubic-bezier(1, 1, 1, 1) 0s infinite;
+    }
+
+    @keyframes fill-animation {
+      0% {
+        stroke-dasharray: 40 242.6;
+        stroke-dashoffset: 0;
+      }
+
+      50% {
+        stroke-dasharray: 141.3;
+        stroke-dashoffset: 141.3;
+      }
+
+      100% {
+        stroke-dasharray: 40 242.6;
+        stroke-dashoffset: 282.6;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root">
+    <div class="loadingDiv">
+      <p class="loading"> <span style="font-size: 50px; font-weight: 200;">Loading</span><br />Please Wait</p>
+      <section class="svg-loader">
+        <svg class="svg-container" height="100" width="100" viewBox="0 0 100 100">
+          <circle class="loader-svg animate" cx="50" cy="50" r="45"></circle>
+        </svg>
+      </section>
+    </div>
+  </div>
+</body>
+
 </html>
