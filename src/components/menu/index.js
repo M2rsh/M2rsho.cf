@@ -40,7 +40,7 @@ class Menu extends React.Component {
     // This function does absolutely nothing.. Maybe except taking too much bytes.. like 119 bytes..
   }
   closeMenu() {
-    this.handleResize();
+    this.handleResize()
     if (this.state.onMobile){
       this.setState({ showMenu: false })
     }
@@ -55,7 +55,6 @@ class Menu extends React.Component {
       }
     };
     const renderMenuButton = () => {
-      this.handleResize();
       if (this.state.onMobile) {
         return (
           <>
