@@ -23,8 +23,8 @@ class Footer extends React.Component {
             </p>
           </div>
           <div style={{float: "right", display: "flex", fontSize: "3em", position: "relative", top: "-2em", marginLeft: "150px"}}>
-                <a href="https://github.com/M2rsho" target="_blank" rel="noreferrer"><RiGithubLine/></a>
-                <a href="https://youtube.com/mariyt10" target="_blank" rel="noreferrer"><RiYoutubeLine/></a>
+                <a href="https://github.com/M2rsh" target="_blank" rel="noreferrer"><RiGithubLine/></a>
+                <a href="https://youtube.com/m2rsh" target="_blank" rel="noreferrer"><RiYoutubeLine/></a>
                 <a href="https://discord.com/invite/dfKMTx9Eea" target="_blank" rel="noreferrer"><RiDiscordLine/></a>
             </div>
         </footer>
